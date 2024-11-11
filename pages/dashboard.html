@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigcale-BMS</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="shortcut icon" href="../assets/img/Brgy LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../style/dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default no-margin">
+        <div class="navbar-header fixed-brand" style="background-color: #040D24;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+                <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #f1f1f1;"></i> Pigcale-BMS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="" style="padding: 0; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                <li class="">
+                    <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2">
+                        <span class="glyphicon glyphicon-th-large" aria-hidden="true" style="color: #f1f1f1;"></span>
+                    </button>
+                </li>
+                <li style="display: flex; justify-content: end;">
+                    <i class="fa-solid fa-gear" style="color: #f1f1f1; font-size: 22px;"></i> 
+                </li>
+            </ul>
+           
+        </div>
+    </nav>
+
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                <li class="profile-section d-flex flex-column">
+                    <a href="#" data-toggle="collapse" data-target="#profile-dropdown"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding-right: 16px;">
+                        <div style="display: flex; flex-direction: row; align-items: center;">
+                            <div>
+                                <img src="../assets/img/Brgy LOGO.png" alt="User Image" class="profile-image">
+                            </div>
+                            <div style="display: flex; flex-direction: column; line-height: 24px;">
+                                <span>Admin</span>
+                                <strong style="color: #040D24;">Pigcale Legazpi</strong>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="caret"></span>
+                        </div>
+                    </a>
+                    <ul id="profile-dropdown" class="collapse">
+                        <li><a href="#">Edit Profile</a></li>
+                    </ul>
+                </li>
+
+                <li class="" style="background-color: #040D24; color: #f1f1f1;">
+                    <a href="./dashboard.html"><span class="fa-stack fa-lg pull-left" style="color: #f1f1f1;"><i
+                                class="fa fa-dashboard fa-stack-1x "></i></span><b
+                            style="color: #f1f1f1 ;">Dashboard</b></a>
+                </li>
+
+                <!-- <span class="" style="padding: 32px;">Menu</span> -->
+
+                <li>
+                    <a href="../pages/bgyOffcial.html"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa-solid fa-handshake fa-stack-1x"></i></span><b>Brgy Officials and Staff</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa-solid fa-user-group fa-stack-1x"></i></i></span><b>Resident
+                            Information</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa-solid fa-award fa-stack-1x"
+                                style="font-size: 24px;"></i></span><b>Barangay Clearance</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa-solid fa-file fa-stack-1x"></i></span><b>Certicate of Indigency</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa fa-flag fa-stack-1x "></i></span><b>Brgy Business Clearance</b></a>
+                </li>
+                <!-- <span class="" style="padding: 32px;">Menu</span> -->
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa-solid fa-gear fa-stack-1x"
+                                style="font-size: 21px;"></i></span><b>Settings</b></a>
+                    <ul id="profile-dropdown" class="collapse">
+                        <li><a href="#">Edit Profile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="page-content-wrapper"> 
+            <div class=" ">
+                <div class="row">
+                    <div style="background-color: #040D24;  padding: 12px 24px; width: 100%; ">
+                        <h4 style="color: #f1f1f1;">Dashboard</h4>
+                    </div>
+                    <div class="container-fluid flex-row justify-content-center align-items-center">
+                        <div class="population d-flex ">
+                            <div class="d-flex justify-content-evenly" style="display: flex; justify-content: space-around; align-items: center; height: 16vh; color: #ffffff; font-size: 30px;">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Population</span>
+                            </div>
+                            <div style="display: flex; justify-content: end;">
+                                <button style="padding: 8px 16px; background-color: transparent; color: #ffffff; border: 1px solid #f1f1f1;">Total Population</button>
+                            </div>
+                        </div>
+                        <div class="purok d-flex">
+                            <div class="d-flex justify-content-evenly"  style="display: flex; justify-content: space-around; align-items: center; height: 16vh; color: #ffffff; font-size: 30px;">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Purok Number</span>
+                            </div>
+                            <div style="display: flex; justify-content: end;">
+                                <button class="" style="padding: 8px 16px; background-color: transparent; color: #ffffff; border: 1px solid #f1f1f1;">Purok Information</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid" style="padding: 24px; width: 100%;">
+                        <div style="display: flex; flex-direction: column; padding: 20px; gap: 8px;">
+                            <strong>Pigcale Mission Statement</strong>
+                            <span>To promote peace, harmony, and solidarity, improve tourism,
+                                commerce, and industry, reduce malnutrition and illiteracy, and uplift the
+                                Socio-Economic
+                                condition through effective local governance and delivery of basic services aimed
+                                towards
+                                attaining a healthy, peaceful, and ecologically-restored community.</span>
+                        </div>
+                        <img src="../assets/img/bg1.png" alt=""
+                            style="object-fit: cover; height: 70vh; width: 100%; padding: 20px;">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS CDN for toggle functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../script/dashboard.js"></script>
+
+    <!-- Script for sidebar toggle -->
+
+</body>
+
+</html>

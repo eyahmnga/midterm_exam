@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigcale-BMS</title>
+    <link rel="shortcut icon" href="../assets/img/Brgy LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/bgyOfficial.css">
+    <link rel="stylesheet" href="../style/dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default no-margin">
+        <div class="navbar-header fixed-brand" style="background-color: #040D24;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+                <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #f1f1f1;"></i> Pigcale-BMS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="" style="padding: 0; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                <li class="">
+                    <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2">
+                        <span class="glyphicon glyphicon-th-large" aria-hidden="true" style="color: #f1f1f1;"></span>
+                    </button>
+                </li>
+                <li style="display: flex; justify-content: end;">
+                    <i class="fa-solid fa-gear" style="color: #f1f1f1; font-size: 22px;"></i> 
+                </li>
+            </ul>
+           
+        </div>
+    </nav>
+
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                <li class="profile-section d-flex flex-column">
+                    <a href="#" data-toggle="collapse" data-target="#profile-dropdown"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding-right: 16px;">
+                        <div style="display: flex; flex-direction: row; align-items: center;">
+                            <div>
+                                <img src="../assets/img/Brgy LOGO.png" alt="User Image" class="profile-image">
+                            </div>
+                            <div style="display: flex; flex-direction: column; line-height: 24px;">
+                                <span>Admin</span>
+                                <strong style="color: #040D24;">Pigcale Legazpi</strong>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="caret"></span>
+                        </div>
+                    </a>
+                    <ul id="profile-dropdown" class="collapse">
+                        <li><a href="#">Edit Profile</a></li>
+                    </ul>
+                </li>
+
+                <li class="" >
+                    <a href="./dashboard.html"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa fa-dashboard fa-stack-1x "></i></span><b
+                            >Dashboard</b></a>
+                </li>
+
+                <!-- <span class="" style="padding: 32px;">Menu</span> -->
+
+                <li style="background-color: #040D24; color: #f1f1f1;">
+                    <a href="./bgyOffcial.html"><span class="fa-stack fa-lg pull-left" ><i
+                                class="fa-solid fa-handshake fa-stack-1x" style="color: #f1f1f1 ;"></i></span><b style="color: #f1f1f1 ;">Brgy Officials and Staff</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa-solid fa-user-group fa-stack-1x"></i></i></span><b>Resident
+                            Information</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa-solid fa-award fa-stack-1x"
+                                style="font-size: 24px;"></i></span><b>Barangay Clearance</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa-solid fa-file fa-stack-1x"></i></span><b>Certicate of Indigency</b></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                                class="fa fa-flag fa-stack-1x "></i></span><b>Brgy Business Clearance</b></a>
+                </li>
+                <!-- <span class="" style="padding: 32px;">Menu</span> -->
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa-solid fa-gear fa-stack-1x"
+                                style="font-size: 21px;"></i></span><b>Settings</b></a>
+                    <ul id="profile-dropdown" class="collapse">
+                        <li><a href="#">Edit Profile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="page-content-wrapper">
+            <div class="row">
+                <div style="background-image: linear-gradient(to right, #040D24, #131e3d); padding: 12px 24px;">
+                    <h4 style="color: #f1f1f1;">Barangay Officials and Staff</h4>
+                    
+                </div>
+
+                <div style="background-color: #FFFFFF; padding: 32px; display: flex; justify-content: space-between; align-items: center; margin: 32px;">
+                    <img src="../assets/img/Brgy LOGO.png" alt="User Image" class="profile-image" style="height: 80px; width: auto;">
+                    <h4>PIGCALE LEGAZPI</h4>
+                    <button type="button" class="btn " data-toggle="modal" data-target="#addOfficialModal" style="background-color: transparent; color: #040D24; border: 1px solid #040D24;">
+                        + Official
+                    </button>
+                </div>
+    
+                <div id="officialsTB" class="container-fluid" style="background-color: #f8f8f8; margin-top: 24px; padding: 24px; margin: 32px;">
+                    <h4 style="color: #333;">Barangay Officials</h4>                   
+    
+                    <!-- Officials Table -->
+                    <table class="table" style="width: 100%; background-color: #fff;">
+                        <thead>
+                            <tr style="background-color: #f0f0f0;">
+                                <th>FullName</th>
+                                <th>Chairmanship</th>
+                                <th>Position</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="officialsTableBody">
+                            <tr style="background-color: #f9f9f9;">
+                                <td>ACHILLES G. ONGOTAN</td>
+                                <td>Punong Barangay</td>
+                                <td>Captain</td>
+                                <td><span class="status-badge">Active</span></td>
+                                <td>
+                                    <button class="action-btn edit-btn" title="Edit"><i class="fa fa-pencil-alt"></i></button>
+                                    <button class="action-btn delete-btn" title="Delete"><i class="fa fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LUIS G. GODOY</td>
+                                <td>Committee on Agriculture/Livelihood</td>
+                                <td>Vice-sCaptain</td>
+                                <td><span class="status-badge">Active</span></td>
+                                <td>
+                                    <button class="action-btn edit-btn" title="Edit"><i class="fa fa-pencil-alt"></i></button>
+                                    <button class="action-btn delete-btn" title="Delete"><i class="fa fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Official Modal -->
+    <div class="modal fade" id="addOfficialModal" tabindex="-1" role="dialog" aria-labelledby="addOfficialModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="addOfficialModalLabel">Add Official</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- Form to add a new official -->
+                    <form id="addOfficialForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="chairmanship">Chairmanship</label>
+                            <input type="text" class="form-control" id="chairmanship" placeholder="Chairmanship" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Position</label>
+                            <input type="text" class="form-control" id="position" placeholder="Position" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="startDate">Start Date</label>
+                            <input type="date" class="form-control" id="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="endDate">End Date</label>
+                            <input type="date" class="form-control" id="endDate" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addOfficial()">Add Official</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS CDN for toggle functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../script/dashboard.js"></script>
+    <script src="../script/officials.js"></script>
+
+    <!-- Script for sidebar toggle -->
+
+</body>
+
+</html>

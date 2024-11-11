@@ -1,0 +1,69 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+thead tr {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Status Badge Styling */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+
+.edit-btn {
+    color: #040D24;
+}
+.delete-btn {
+    color: #040D24; 
+}
+
+ /* Additional styling for the status badge */
+ .status-badge {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1em;
+}
+
+.status-badge.Active {
+    background-color: #28a745; /* Green for Active */
+}
+
+.status-badge.Inactive {
+    background-color: #dc3545; /* Red for Inactive */
+}
+
+/* Styling for action buttons */
+.action-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+.edit-btn {
+    color: #4CAF50;
+}
+.delete-btn {
+    color: #F44336;
+}
